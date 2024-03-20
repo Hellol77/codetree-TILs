@@ -9,7 +9,7 @@ for i in range(m):
     l[x][y]=1
     l[y][x]=1
 visited=[False for i in range(n+1)]
-answer=0
+answer=-1
 def dfs(start):
     global answer
     for i in range(1,n+1):
