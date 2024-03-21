@@ -7,7 +7,7 @@ for i in range(n):
     l.append(block)
 
 s=sum(l)
-s=s//4
+s=s//n
 answer=0
 for i in l:
     if i==s:
