@@ -2,7 +2,7 @@ import sys
 
 n,m=map(int,sys.stdin.readline().split())
 arr=[]
-visited = [[0 for i in range(m)] for i in range(n)]
+visited = [[0 for i in range(n)] for i in range(m)]
 for i in range(n):
     arr.append(list(map(int,sys.stdin.readline().split())))
 
