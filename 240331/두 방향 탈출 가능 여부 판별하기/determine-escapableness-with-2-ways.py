@@ -5,11 +5,11 @@ arr=[]
 visited = [[0 for i in range(n)] for i in range(m)]
 for i in range(n):
     arr.append(list(map(int,sys.stdin.readline().split())))
-
+answer=0
 def dfs(x,y):
     
     if x==n-1 and y==m-1:
-        return True
+        answer=1
     dxs = [1,0]
     dys = [0,1]
     for i in range(2):
@@ -19,7 +19,6 @@ def dfs(x,y):
             visited[dx][dy]=1
             dfs(dx,dy)
 
-if dfs(0,0):
-    print(1)
-else:
-    print(0)
+dfs(0,0)
+
+print(answer)
