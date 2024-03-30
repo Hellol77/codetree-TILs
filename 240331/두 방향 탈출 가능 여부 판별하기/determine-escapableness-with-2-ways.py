@@ -8,7 +8,7 @@ for i in range(n):
 answer=0
 def dfs(x,y):
     
-    if x==n-1 and y==m-1:
+    if arr[x][y]==1 and x==n-1 and y==m-1:
         answer=1
     dxs = [1,0]
     dys = [0,1]
