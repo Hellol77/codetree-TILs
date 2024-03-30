@@ -12,7 +12,7 @@ def dfs(x,y):
     dxs = [1,0]
     dys = [0,1]
     for i in range(2):
-        dx=dxs[1]+x
+        dx=dxs[0]+x
         dy=dys[1]+y
         if 0<=dx<n and 0<=dy<m and arr[dx][dy] != 0 and visited[dx][dy]!=1:
             visited[dx][dy]=1
