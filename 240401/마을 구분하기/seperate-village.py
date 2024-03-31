@@ -10,7 +10,7 @@ for i in range(n):
 
 def dfs(x,y):
     global temp
-    dxs=[1,1,0,0]
+    dxs=[1,0,-1,0]
     dys=[0,1,0,1]
 
     for xx,yy in zip(dxs,dys):
